@@ -15,12 +15,7 @@
         align-self: center;
     
     }
-    .search-icon {
-        height: 2rem;
-        width: 2rem;
-        fill: var(--color-grey-dark-3);
-        background-color: transparent;
-    }
+ 
     &-search {
         grid-row: 1 / 2;
         grid-column: 2 / span 2;
@@ -39,11 +34,21 @@
             transition: all .2s;
             margin-right: -3.25rem;
             &:focus {
-                width: 100%;
+                width: 95%;
                 outline: none;
                 background-color: var(--color-grey-light-3);
             }
         }
+        &-button {
+            border: 0;
+            .search-icon {
+                height: 2rem;
+                width: 2rem;
+                fill: var(--color-grey-dark-3);
+               
+            }
+        }
+
     }
     
   .user-group {
