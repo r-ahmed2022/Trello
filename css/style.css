@@ -47,6 +47,9 @@ html {
       font-size: 50%; } }
   @media (max-width: 56.25em) {
     html {
+      font-size: 40%; } }
+  @media (max-width: 25em) {
+    html {
       font-size: 35%; } }
 
 body {
@@ -81,14 +84,20 @@ body {
   margin: 8rem auto; }
   @media only screen and (max-width: 37.5em) {
     .container {
-      margin: 0;
-      width: 100%; } }
+      width: 100%;
+      margin: 0; } }
+  @media only screen and (max-width: 25em) {
+    .container {
+      margin: 0; } }
 
 .header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   padding: 1rem;
   align-content: center; }
+  @media (max-width: 25em) {
+    .header {
+      grid-template-columns: 1fr; } }
   .header-logo {
     height: 3.25rem;
     grid-row: 1 / 2;
@@ -170,7 +179,8 @@ body {
   background-color: var(--color-grey-light-1); }
   @media (max-width: 37.5em) {
     .content {
-      grid-template-columns: 1 / -1; } }
+      grid-template-columns: 1 / -1;
+      margin: 0; } }
   .content-sidebar {
     grid-row: 1 / -1;
     grid-column: sidebar-start / sidebar-end;
@@ -199,6 +209,12 @@ body {
             margin: 2rem;
             padding: 2rem 4rem;
             font-size: 2rem; } }
+    @media (max-width: 56.25em) and (max-width: 25em) {
+      .content-sidebar .navigation > * {
+        margin: .7rem;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        justify-content: space-evenly; } }
       .content-sidebar .navigation-item {
         list-style: none;
         margin-bottom: 2rem;

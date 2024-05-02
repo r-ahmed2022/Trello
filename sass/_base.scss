@@ -58,7 +58,10 @@ Grey dark 3: #999
             font-size: 50%;
         }
         @media (max-width: $bp-md) {
-            font-size: 35%
+            font-size: 40%
+        }
+        @media (max-width: $bp-xs) {
+            font-size: 35%;
         }
     }
     

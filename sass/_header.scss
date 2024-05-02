@@ -3,7 +3,9 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     padding: 1rem;
     align-content: center;
-  
+    @media(max-width: $bp-xs) {
+        grid-template-columns: 1fr;
+    }
     &-logo {
         height: 3.25rem;
         grid-row: 1 / 2;
